@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braille Pulse Dataset Gallery</title>
+    <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/bootstrap/css/bootstrap.min.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/dropdown/css/style.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/socicon/css/styles.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/theme/css/style.css?rnd=1711461017630">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/css/mbr-additional.css?rnd=1711461017630" type="text/css">
+  <style>
+        .thumbnail {
+            width: 150px;
+            height: auto; /* Allow height to adjust based on content */
+            overflow: hidden;
+            margin: 10px;
+            display: inline-block;
+            position: relative; /* Ensure proper positioning of caption */
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 150px; /* Fixed height for the image */
+            object-fit: cover; /* Preserve aspect ratio */
+            cursor: pointer;
+        }
+        .thumbnail .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            color: #fff; /* White text color */
+            padding: 5px; /* Add some padding */
+            box-sizing: border-box; /* Ensure padding is included in width */
+            text-align: center; /* Center align the text */
+        }
+        .gallery,.h1 {
+            text-align: center;
+            margin-top: 20px; /* Adjust spacing from the top */
+        }
+	.container.text-center{}
+        .container.text-center {
+    margin-top: 115px !important;
+}
+
+
+        .button-container button {
+            margin-right: 10px; /* Adjust margin between buttons as needed */
+        }
+.button-container {
+            position: relative;
+            margin-top: 20px; /* Adjust margin-top as needed */
+            text-align: center; /* Center align buttons */
+        }
+
+    
+
+        .action-button {
+           background-color: #800080; /* Purple */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 12px;
+        }
+
+        .action-button:hover {
+            background-color: #45a049; /* Darker green */
+        }; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .action-button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+	.subtitles {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display:none;
+    z-index: 9999;
+}
+    </style>
+</head>
+<body onload="playInstructions()">
+
+<audio id="instructionAudio" autoplay>
+    <source src="gallery.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<audio id="instructionAudio1" autoplay>
+    <source src="gallery_ins.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<section data-bs-version="5.1" class="menu menu2 cid-u88io9u5rV" once="menu" id="menu-5-u88io9u5rV">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="">
+                        <img src="assets/images/bp.jpg" alt="Mobirise Website Builder" style="height: 4.3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="index.html">BraillePulse</a></span>
+            </div>
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="Explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="dataset_main.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="map.html">Map</a>
+                    </li>
+                </ul>
+                <!-- Join Now Button -->
+                <div class="navbar-buttons mbr-section-btn">
+                    <a class="btn btn-primary display-4" href="https://mobiri.se">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+  <div class="container text-center mt-5">
+        <label for="languageDropdown">Select Language:</label>
+        <select id="languageDropdown" class="form-select" onchange="selectLanguage(this.value)">
+    <option value="" selected disabled>Select a language</option>
+    <option value="Albanian">Albanian</option>
+    <option value="Algerian">Algerian</option>
+    <option value="Arabic">Arabic</option>
+    <option value="Belarusian">Belarusian</option>
+    <option value="Bengali">Bengali</option>
+    <option value="Bulgarian">Bulgarian</option>
+    <option value="Chinese">Chinese</option>
+    <option value="Croatian">Croatian</option>
+    <option value="Czech">Czech</option>
+    <option value="Devanagiri">Devanagiri</option>
+    <option value="Dutch">Dutch</option>
+    <option value="English">English</option>
+    <option value="French">French</option>
+    <option value="German">German</option>
+    <option value="Greek">Greek</option>
+    <option value="Hausa(Nigeria)">Hausa(Nigeria)</option>
+    <option value="Hungarian">Hungarian</option>
+    <option value="Icelandic">Icelandic</option>
+    <option value="Igbo(Nigeria)">Igbo(Nigeria)</option>
+    <option value="Italian">Italian</option>
+    <option value="Japanese">Japanese</option>
+    <option value="Kazakh">Kazakh</option>
+    <option value="Kyrgyz">Kyrgyz</option>
+    <option value="Lithuanian">Lithuanian</option>
+    <option value="Luxembourgish">Luxembourgish</option>
+    <option value="Macedonian">Macedonian</option>
+    <option value="Malayalam">Malayalam</option>
+    <option value="Mongolian">Mongolian</option>
+    <option value="Persian">Persian</option>
+    <option value="Polish">Polish</option>
+    <option value="Portuguese">Portuguese</option>
+    <option value="Romanian">Romanian</option>
+    <option value="Russian">Russian</option>
+    <option value="Serbian">Serbian</option>
+    <option value="Slovak">Slovak</option>
+    <option value="Slovene">Slovene</option>
+    <option value="Spanish">Spanish</option>
+    <option value="Swedish">Swedish</option>
+    <option value="Tactile Images">Tactile Images</option>
+    <option value="Tamil">Tamil</option>
+    <option value="Tatar">Tatar</option>
+    <option value="Turkish">Turkish</option>
+    <option value="Ukrainian">Ukrainian</option>
+    <option value="Yoruba(Nigeria)">Yoruba(Nigeria)</option>
+</select>
+<div class="button-container">
+    <button class="action-button" id="instructionButton" onclick="toggleInstructionAudio()">Play Instruction</button>
+    <button class="action-button" id="subtitlesToggle" onclick="toggleSubtitles()">Turn on subtitles</button>
+</div>
+    </div>
+
+<div class="subtitles">Instruction: "Welcome to the Braille Pulse Dataset Gallery. In this gallery, you can explore various languages represented in the dataset through tactile images. . Hover over a thumbnail to hear the language name. Click on a thumbnail to view the corresponding dataset. You can also select a language from the dropdown menu above. Enjoy exploring!"
+</div>
+<div class="gallery" id="gallery">
+    <!-- Thumbnails for each language will be added here -->
+</div>
+<script>
+    // Function to generate the gallery
+    function generateGallery() {
+        const galleryDiv = document.getElementById('gallery');
+
+        const languages = [
+    { name: 'Albanian', thumbnail: 'thumbnails/albania.jpg', link: 'albanian.html', text: 'Albanian' },
+     { name: 'Algerian', thumbnail: 'thumbnails/algerian.png', link: 'algerian.html', text: 'Algerian' },
+    { name: 'Arabic', thumbnail: 'thumbnails/arabic.jpg', link: 'arabic.html', text: 'Arabic' },
+    { name: 'Belarusian', thumbnail: 'thumbnails/belarus.png', link: 'belarusian.html', text: 'Belarusian' },
+    { name: 'Bengali', thumbnail: 'thumbnails/bengali.jpg', link: 'bengali.html', text: 'Bengali' },
+    { name: 'Bulgarian', thumbnail: 'thumbnails/bulgarian.jpg', link: 'bulgarian.html', text: 'Bulgarian' },
+    { name: 'Chinese', thumbnail: 'thumbnails/chinese.jpg', link: 'chinese.html', text: 'Chinese' },
+    { name: 'Croatian', thumbnail: 'thumbnails/croatian.png', link: 'croatian.html', text: 'Croatian' },
+    { name: 'Czech', thumbnail: 'thumbnails/czech.jpg', link: 'czech.html', text: 'Croatian' },
+    { name: 'Devanagiri', thumbnail: 'thumbnails/devanagiri.jpg', link: 'devanagiri.html', text: 'Devanagiri' },
+    { name: 'Dutch', thumbnail: 'thumbnails/dutch.jpg', link: 'dutch.html', text: 'Dutch' },
+    { name: 'English', thumbnail: 'thumbnails/english.jpg', link: 'english.html', text: 'English' },
+    { name: 'French', thumbnail: 'thumbnails/french.png', link: 'french.html', text: 'French' },
+    { name: 'German', thumbnail: 'thumbnails/german.png', link: 'german.html', text: 'German' },
+    { name: 'Greek', thumbnail: 'thumbnails/greek.jpg', link: 'greek.html', text: 'Greek' },
+    { name: 'Hausa(Nigeria)', thumbnail: 'thumbnails/hausa.jpg', link: 'hausa.html', text: 'Hausa(Nigeria)' },
+    { name: 'Hungarian', thumbnail: 'thumbnails/hungarian.jpg', link: 'hungarian.html', text: 'Hungarian' },
+    { name: 'Icelandic', thumbnail: 'thumbnails/icelandic.png', link: 'icelandic.html', text: 'Icelandic' },
+    { name: 'Igbo(Nigeria)', thumbnail: 'thumbnails/igbo.jpg', link: 'igbo.html', text: 'Igbo(Nigeria)' },
+    { name: 'Italian', thumbnail: 'thumbnails/italian.png', link: 'italian.html', text: 'Italian' },
+    { name: 'Japanese', thumbnail: 'thumbnails/japanese.png', link: 'japanese.html', text: 'Japanese' },
+    { name: 'Kazakh', thumbnail: 'thumbnails/kazakh.jpg', link: 'kazakh.html', text: 'Kazakh' },
+    { name: 'Kyrgyz', thumbnail: 'thumbnails/kyrgyz.jpg', link: 'kyrgyz.html', text: 'Kyrgyz' },
+    { name: 'Lithuanian', thumbnail: 'thumbnails/lithuanian.jpg', link: 'lithuanian.html', text: 'Lithuanian' },
+    { name: 'Luxembourgish', thumbnail: 'thumbnails/luxembourgish.png', link: 'luxembourgish.html', text: 'Luxembourgish' },
+    { name: 'Macedonian', thumbnail: 'thumbnails/macedonian.jpg', link: 'macedonian.html', text: 'Macedonian' },
+    { name: 'Malayalam', thumbnail: 'thumbnails/malayalam.png', link: 'malayalam.html', text: 'Malayalam' },
+    { name: 'Mongolian', thumbnail: 'thumbnails/mangolian.jpg', link: 'mongolian.html', text: 'Mongolian' },
+    { name: 'Persian', thumbnail: 'thumbnails/persian.png', link: 'persian.html', text: 'Persian' },
+    { name: 'Polish', thumbnail: 'thumbnails/polish.jpg', link: 'polish.html', text: 'polish' },
+    { name: 'Portuguese', thumbnail: 'thumbnails/portuguese.jpg', link: 'portuguese.html', text: 'portuguese' },
+    { name: 'Romanian', thumbnail: 'thumbnails/romanian.jpg', link: 'romanian.html', text: 'romanian' },
+    { name: 'Russian', thumbnail: 'thumbnails/russian.png', link: 'russian.html', text: 'russian' },
+    { name: 'Serbian', thumbnail: 'thumbnails/serbian.jpg', link: 'serbian.html', text: 'serbian' },
+    { name: 'Slovak', thumbnail: 'thumbnails/slovak.jpg', link: 'slovak.html', text: 'slovak' },
+    { name: 'Slovene', thumbnail: 'thumbnails/slovene.jpg', link: 'slovene.html', text: 'slovene' },
+    { name: 'Spanish', thumbnail: 'thumbnails/spanish.jpg', link: 'spanish.html', text: 'spanish' },
+    { name: 'Swedish', thumbnail: 'thumbnails/swedish.jpg', link: 'swedish.html', text: 'swedish' },
+    { name: 'Tactile Images', thumbnail: 'thumbnails/tactile.jpg', link: 'tactile.html', text: 'tactile images' },
+    { name: 'Tamil', thumbnail: 'thumbnails/tamil.jpg', link: 'tamil.html', text: 'tamil' },
+    { name: 'Tatar', thumbnail: 'thumbnails/tatar.png', link: 'tatar.html', text: 'tatar' },
+    { name: 'Turkish', thumbnail: 'thumbnails/turkish.jpg', link: 'turkish.html', text: 'turkish' },
+    { name: 'Ukrainian', thumbnail: 'thumbnails/ukranian.png', link: 'ukrainian.html', text: 'ukrainian' },
+    { name: 'Yoruba(Nigeria)', thumbnail: 'thumbnails/yoruba.png', link: 'yoruba.html', text: 'yoruba(Nigeria)' }
+];
+
+// Create SpeechSynthesisUtterance object
+const utterance = new SpeechSynthesisUtterance();
+
+// Function to speak the language text
+function speakLanguageText(text) {
+    // Set text to be spoken
+    utterance.text = text;
+    // Speak the text
+    window.speechSynthesis.speak(utterance);
+}
+
+// Function to handle mouse over event
+function handleMouseOver(language) {
+    // Speak the language text
+    speakLanguageText(language.text);
+}
+
+// Function to handle mouse out event
+function handleMouseOut() {
+    // Stop speaking when mouse moves away from the image
+    window.speechSynthesis.cancel();
+}
+    function selectLanguage(language) {
+        // Get the selected language object from the languages array
+        const selectedLanguage = languages.find(lang => lang.name === language);
+
+        // Do something with the selected language object
+        console.log("Selected Language:", selectedLanguage);
+        
+        // Redirect to the corresponding HTML page
+        window.location.href = selectedLanguage.link;
+    }
+
+// Create thumbnail elements for each language
+languages.forEach(language => {
+    const thumbnailDiv = document.createElement('div');
+    thumbnailDiv.className = 'thumbnail';
+    const thumbnailImage = document.createElement('img');
+    thumbnailImage.src = language.thumbnail;
+    thumbnailImage.alt = language.name;
+
+    // Add event listener for mouse over
+    thumbnailImage.addEventListener('mouseover', () => handleMouseOver(language));
+
+    // Add event listener for mouse out
+    thumbnailImage.addEventListener('mouseout', handleMouseOut);
+
+    // Redirect to language specific page on click
+    thumbnailImage.onclick = () => {
+        window.location.href = language.link;
+    };
+    thumbnailDiv.appendChild(thumbnailImage);
+
+    // Create caption element
+    const caption = document.createElement('div');
+    caption.className = 'caption';
+    caption.textContent = language.name;
+    thumbnailDiv.appendChild(caption);
+
+    galleryDiv.appendChild(thumbnailDiv);
+});
+
+
+
+}
+document.addEventListener("DOMContentLoaded", function() {
+        const dropdownBtn = document.querySelector('.dropdown-btn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdownContent.addEventListener('click', function(event) {
+            if (event.target.tagName === 'A') {
+                const language = event.target.textContent.toLowerCase();
+                const url = language + '.html'; // Assuming language pages are named accordingly
+                window.location.href = url;
+            }
+        });
+    });
+function selectLanguage(language) {
+            if (language) {
+                // Redirect to the corresponding HTML page based on the selected language
+                window.location.href = language + '.html'; // Assuming your HTML files are named as 'language.html' (e.g., 'albanian.html', 'algerian.html', etc.)
+            }
+        }
+function playInstructions() {
+    const audio = new Audio('instructions.mp3');
+    
+    // Check if the audio is already playing
+    if (audio.paused) {
+        audio.play();
+    }
+}
+ var audio = document.getElementById('instructionAudio');
+    var subtitles = document.querySelector('.subtitles');
+    var subtitlesToggle = document.getElementById('subtitlesToggle');
+
+    function toggleSubtitles() {
+        var subtitles = document.querySelector('.subtitles');
+        if (subtitles.style.display === 'none') {
+            subtitles.style.display = 'block'; // Display subtitles
+            document.getElementById('subtitlesToggle').textContent = 'Subtitles on'; // Update button text
+        } else {
+            subtitles.style.display = 'none'; // Hide subtitles
+            document.getElementById('subtitlesToggle').textContent = 'Turn On Subtitles'; // Update button text
+        }
+    }
+
+    // Event listener to toggle subtitles when the subtitles toggle button is clicked
+    subtitlesToggle.addEventListener('click', toggleSubtitles);
+
+    // Function to toggle image size
+    function toggleImageSize(img) {
+        // Your existing code for toggling image size
+    }
+
+    // Function to toggle instruction audio
+    function toggleInstructionAudio() {
+        var audio = document.getElementById('instructionAudio1');
+        var button = document.getElementById('instructionButton');
+        if (audio.paused) {
+            audio.play(); // Play the audio
+            button.textContent = 'Stop Instruction'; // Change button text to 'Stop Instruction'
+        } else {
+            audio.pause(); // Pause the audio
+            button.textContent = 'Play Instruction'; // Change button text to 'Play Instruction'
+        }
+    }
+
+    // Function to play instruction audio on page load
+    function playInstructionAudio() {
+        var instructionAudio = document.getElementById('instructionAudio');
+        instructionAudio.play();
+    }
+
+    // Event listener to play instruction audio when the page loads
+    window.onload = function() {
+        playInstructionAudio();
+	generateGallery();
+    };
+
+</script>
+
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/ytplayer/index.js"></script>
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="assets/vimeoplayer/player.js"></script>
+<script src="assets/embla/embla.min.js"></script>
+<script src="assets/embla/script.js"></script>
+<script src="assets/theme/js/script.js"></script>
+<script src="assets/formoid/formoid.min.js"></script>
+</body>
+</html>

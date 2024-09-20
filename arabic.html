@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braille Pulse Dataset Gallery</title>
+    <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/bootstrap/css/bootstrap.min.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/dropdown/css/style.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/socicon/css/styles.css?rnd=1711461017630">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/theme/css/style.css?rnd=1711461017630">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/365591/assets/css/mbr-additional.css?rnd=1711461017630" type="text/css">
+  <style>
+	<style>
+	.one{
+	    margin-top:200px;
+	    display: flex;
+    justify-content: center;
+	}
+	.button-container {
+            position: relative;
+            margin-top: 115px; /* Adjust margin-top as needed */
+            text-align: center; /* Center align buttons */
+        }
+
+    
+
+        .action-button {
+           background-color: #800080; /* Purple */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 12px;
+        }
+
+        .action-button:hover {
+            background-color: #45a049; /* Darker green */
+        }; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .action-button:hover {
+            background-color: #45a049; /* Darker green */
+        }        /* Style for the table */
+        table.image-table {
+            margin-top: 25px; /* Adjust spacing from the top */
+        }
+        .image-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        .image-table td, .image-table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .horizontal-images {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .horizontal-images img {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 50px; /* Adjust as needed */
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .horizontal-images img:hover {
+            transform: scale(1.1); /* Scale up the image on hover */
+        }
+        .caption {
+            text-align: center;
+            font-size: 12px;
+        }
+        .large-image-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999; /* Ensure the enlarged image appears on top */
+        }
+        .large-image {
+            max-width: 90%; /* Adjust the maximum width as needed */
+            max-height: 90%; /* Adjust the maximum height as needed */
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .subtitles {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display:none;
+}
+        .thumbnail {
+            width: 150px;
+            height: auto; /* Allow height to adjust based on content */
+            overflow: hidden;
+            margin: 10px;
+            display: inline-block;
+            position: relative; /* Ensure proper positioning of caption */
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 150px; /* Fixed height for the image */
+            object-fit: cover; /* Preserve aspect ratio */
+            cursor: pointer;
+        }
+        .thumbnail .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            color: #fff; /* White text color */
+            padding: 5px; /* Add some padding */
+            box-sizing: border-box; /* Ensure padding is included in width */
+            text-align: center; /* Center align the text */
+        }
+        
+    </style>
+</head>
+<body>
+<section data-bs-version="5.1" class="menu menu2 cid-u88io9u5rV" once="menu" id="menu-5-u88io9u5rV">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="">
+                        <img src="assets/images/bp.jpg" alt="Mobirise Website Builder" style="height: 4.3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="index.html">BraillePulse</a></span>
+            </div>
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="Explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="dataset_main.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="https://mobiri.se">Map</a>
+                    </li>
+                </ul>
+                <!-- Join Now Button -->
+                <div class="navbar-buttons mbr-section-btn">
+                    <a class="btn btn-primary display-4" href="https://mobiri.se">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<div class="subtitles">Instruction: Welcome to the Arabic Dataset page. This page shows how Spanish alphabets and symbols are represented in Braille.
+
+You'll see two sections: Alphabets and punctuations. Click on any image to zoom in.
+
+Explore the images to learn about Braille representation. Enjoy!</div>
+<pre>
+
+</pre>
+<div class="button-container">
+    <button class="action-button" id="instructionButton" onclick="toggleInstructionAudio()">Play Instruction</button>
+    <button class="action-button" id="subtitlesToggle" onclick="toggleSubtitles()">Turn on subtitles</button>
+</div>
+
+
+<!-- Navigation Bar -->
+<audio id="instructionAudio" autoplay>
+    <source src="voiceover.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<audio id="instructionAudio1" autoplay>
+    <source src="Arabic_dataset.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<table class="image-table" id="imageTable">
+    <thead>
+    <tr>
+        <th>Category</th>
+        <th>Images</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Alphabets -->
+    <tr>
+        <td>Alphabets</td>
+        <td class="horizontal-images">
+            
+       <!-- ء -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ء\ء.jpg" alt="ء" onclick="toggleImageSize(this)">
+            <div class="caption">ء</div>
+        </div>
+        
+        <!-- آ -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\آ\آ.jpg" alt="آ" onclick="toggleImageSize(this)">
+            <div class="caption">آ</div>
+        </div>
+        
+        <!-- أو -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\أو\أو.jpg" alt="أو" onclick="toggleImageSize(this)">
+            <div class="caption">أو</div>
+        </div>
+        
+        <!-- ؤ -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ؤ\ؤ.jpg" alt="ؤ" onclick="toggleImageSize(this)">
+            <div class="caption">ؤ</div>
+        </div>
+        
+        <!-- إ -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\إ\إ.jpg" alt="إ" onclick="toggleImageSize(this)">
+            <div class="caption">إ</div>
+        </div>
+        
+        <!-- ئ -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ئ\ئ.jpg" alt="ئ" onclick="toggleImageSize(this)">
+            <div class="caption">ئ</div>
+        </div>
+        
+        <!-- ا -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ا\ا‎.jpg" alt="ا" onclick="toggleImageSize(this)">
+            <div class="caption">ا</div>
+        </div>
+        
+        <!-- ال -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ال\ال.jpg" alt="ال" onclick="toggleImageSize(this)">
+            <div class="caption">ال</div>
+        </div>
+        
+        <!-- ب -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ب\ب.jpg" alt="ب" onclick="toggleImageSize(this)">
+            <div class="caption">ب</div>
+        </div>
+        
+        <!-- ة -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ة\ة.jpg" alt="ة" onclick="toggleImageSize(this)">
+            <div class="caption">ة</div>
+        </div>
+        
+        <!-- ت -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ت\ت.jpg" alt="ت" onclick="toggleImageSize(this)">
+            <div class="caption">ت</div>
+        </div>
+        
+        <!-- ث -->
+        <div>
+            <img src="BraillePulse\Arabic\Alphabets\ث\ث.jpg" alt="ث" onclick="toggleImageSize(this)">
+            <div class="caption">ث</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ة\ة.jpg" alt="ة" onclick="toggleImageSize(this)">
+            <div class="caption">ة</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ت\ت.jpg" alt="ت" onclick="toggleImageSize(this)">
+            <div class="caption">ت</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ث\ث.jpg" alt="ث" onclick="toggleImageSize(this)">
+            <div class="caption">ث</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ج\ج.jpg" alt="ج" onclick="toggleImageSize(this)">
+            <div class="caption">ج</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ح\ح.jpg" alt="ح" onclick="toggleImageSize(this)">
+            <div class="caption">ح</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\خ\خ.jpg" alt="خ" onclick="toggleImageSize(this)">
+            <div class="caption">خ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\د‎\د.jpg" alt="د" onclick="toggleImageSize(this)">
+            <div class="caption">د</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ذ\ذ.jpg" alt="ذ" onclick="toggleImageSize(this)">
+            <div class="caption">ذ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ر\ر.jpg" alt="ر" onclick="toggleImageSize(this)">
+            <div class="caption">ر</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ز‎\ز.jpg" alt="ز" onclick="toggleImageSize(this)">
+            <div class="caption">ز</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\س‎\س‎.jpg" alt="س‎" onclick="toggleImageSize(this)">
+            <div class="caption">س‎</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ش\ش.jpg" alt="ش" onclick="toggleImageSize(this)">
+            <div class="caption">ش</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ص‎\ص‎.jpg" alt="ص" onclick="toggleImageSize(this)">
+            <div class="caption">ص</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ض‎\ض‎.jpg" alt="ض" onclick="toggleImageSize(this)">
+            <div class="caption">ض</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ط‎\ط‎.jpg" alt="ط‎‎‎" onclick="toggleImageSize(this)">
+            <div class="caption">ط‎</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ظ\ظ.jpg" alt="ظ" onclick="toggleImageSize(this)">
+            <div class="caption">ظ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ع\ع.jpg" alt="ع" onclick="toggleImageSize(this)">
+            <div class="caption">ع</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\غ\غ.jpg" alt="غ" onclick="toggleImageSize(this)">
+            <div class="caption">غ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ــً\ــً.jpg" alt="ــً" onclick="toggleImageSize(this)">
+            <div class="caption">ـً</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ــٌ\ــٌ.jpg" alt="ــٌ" onclick="toggleImageSize(this)">
+            <div class="caption">ــٌ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ــٍ\ــٍ.jpg" alt="ــٍ" onclick="toggleImageSize(this)">
+            <div class="caption">ــٍ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ــَ\ــَ.jpg" alt="ــَ" onclick="toggleImageSize(this)">
+            <div class="caption">ــَ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ــُ\ــُ.jpg" alt="ــُ" onclick="toggleImageSize(this)">
+            <div class="caption">ــُ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ــِ\ــِ.jpg" alt="ــِ" onclick="toggleImageSize(this)">
+            <div class="caption">ــِ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ــّ\ــّ.jpg" alt="ـّ" onclick="toggleImageSize(this)">
+            <div class="caption">ـّ</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ــْ\ــْ.jpg" alt="ــْ" onclick="toggleImageSize(this)">
+            <div class="caption">ــْ</div>
+        </div>
+<div>
+            <img src="BraillePulse\Arabic\Alphabets\ف\ف.jpg" alt="ف" onclick="toggleImageSize(this)">
+            <div class="caption">ف</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ق\ق.jpg" alt="ق" onclick="toggleImageSize(this)">
+            <div class="caption">ق</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ك\ك.jpg" alt="ك" onclick="toggleImageSize(this)">
+            <div class="caption">ك</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ل\ل.jpg" alt="ل" onclick="toggleImageSize(this)">
+            <div class="caption">ل</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\م\م.jpg" alt="م" onclick="toggleImageSize(this)">
+            <div class="caption">م</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ن\ن.jpg" alt="ن" onclick="toggleImageSize(this)">
+            <div class="caption">ن</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ه\ه.jpg" alt="ه" onclick="toggleImageSize(this)">
+            <div class="caption">ه</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\و\و.jpg" alt="و" onclick="toggleImageSize(this)">
+            <div class="caption">و</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ى\ى.jpg" alt="ى" onclick="toggleImageSize(this)">
+            <div class="caption">ى</div>
+        </div>
+	<div>
+            <img src="BraillePulse\Arabic\Alphabets\ي\ي.jpg" alt="ي" onclick="toggleImageSize(this)">
+            <div class="caption">ي</div>
+        </div>
+	
+	
+            <!-- Repeat for all alphabet images -->
+        </td>
+    </tr>
+
+    <!-- Numbers -->
+    <tr>
+        <td>Punctuation:</td>
+        <td class="horizontal-images">
+            <!-- Include all number images here with captions -->
+            <!-- Example: -->
+            <div>
+                    <img src="BraillePulse\Arabic\Punctuation\!.jpg" alt="!" onclick="toggleImageSize(this)">
+                    <div class="caption">!</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\(...).jpg" alt="(...)" onclick="toggleImageSize(this)">
+                    <div class="caption">(...)</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\-.jpg" alt="-" onclick="toggleImageSize(this)">
+                    <div class="caption">-</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\abbrevation.jpg" alt="abbrevation" onclick="toggleImageSize(this)">
+                    <div class="caption">abbrevation</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\colon.jpg" alt="colon" onclick="toggleImageSize(this)">
+                    <div class="caption">colon</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\dot.jpg" alt="dot" onclick="toggleImageSize(this)">
+                    <div class="caption">dot</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\star.jpg" alt="star" onclick="toggleImageSize(this)">
+                    <div class="caption">star</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\underlining.jpg" alt="underlining" onclick="toggleImageSize(this)">
+                    <div class="caption">underlining</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\[...].jpg" alt="[...]" onclick="toggleImageSize(this)">
+                    <div class="caption">[...]</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\{...}.jpg" alt="{...}" onclick="toggleImageSize(this)">
+                    <div class="caption">{...}</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\،.jpg" alt="،" onclick="toggleImageSize(this)">
+                    <div class="caption">،</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\؛.jpg" alt="؛" onclick="toggleImageSize(this)">
+                    <div class="caption">؛</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\؟.jpg" alt="؟" onclick="toggleImageSize(this)">
+                    <div class="caption">؟</div>
+                </div>
+		<div>
+                    <img src="BraillePulse\Arabic\Punctuation\“...”.jpg" alt="“...”" onclick="toggleImageSize(this)">
+                    <div class="caption">“...”</div>
+                </div>
+		
+                <!-- Repeat for all number images -->
+            </td>
+            <!-- Repeat for all number images -->
+        </td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+<script>
+    var audio = document.getElementById('instructionAudio');
+    var subtitles = document.querySelector('.subtitles');
+    var subtitlesToggle = document.getElementById('subtitlesToggle');
+
+ function toggleSubtitles() {
+        var subtitles = document.querySelector('.subtitles');
+        if (subtitles.style.display === 'none') {
+            subtitles.style.display = 'block'; // Display subtitles
+            document.getElementById('subtitlesToggle').textContent = 'Subtitles on'; // Update button text
+        } else {
+            subtitles.style.display = 'none'; // Hide subtitles
+            document.getElementById('subtitlesToggle').textContent = 'Turn On Subtitles'; // Update button text
+        }
+    }
+
+    // Event listener to toggle subtitles when the subtitles toggle button is clicked
+    subtitlesToggle.addEventListener('click', toggleSubtitles);
+
+    // Function to toggle image size
+function toggleImageSize(img) {
+    const largeImageContainer = document.createElement('div');
+    largeImageContainer.className = 'large-image-container';
+
+    const largeImage = new Image();
+    largeImage.src = img.src;
+    largeImage.alt = img.alt;
+    largeImage.className = 'large-image';
+    largeImage.onclick = function () {
+        document.body.removeChild(largeImageContainer);
+        audio.play(); // Play voiceover.mp3 when the image is closed
+    };
+
+    // Limit the maximum width and height for the enlarged image
+    largeImage.style.maxWidth = '40%'; // Adjust the maximum width as needed
+    largeImage.style.maxHeight = '70%'; // Adjust the maximum height as needed
+
+    largeImageContainer.appendChild(largeImage);
+    document.body.appendChild(largeImageContainer);
+
+    // Play instruction audio
+    audio.src = 'voiceover.mp3'; // Change source to the zoom out instruction audio
+    audio.play();
+}
+
+    function toggleInstructionAudio() {
+        var audio = document.getElementById('instructionAudio1');
+        var button = document.getElementById('instructionButton');
+        if (audio.paused) {
+            audio.play(); // Play the audio
+            button.textContent = 'Stop Instruction'; // Change button text to 'Stop Instruction'
+        } else {
+            audio.pause(); // Pause the audio
+            button.textContent = 'Play Instruction'; // Change button text to 'Play Instruction'
+        }
+    }
+    function playInstructionAudio() {
+        var instructionAudio = document.getElementById('instructionAudio');
+        instructionAudio.play();
+    }
+    window.onload = function() {
+        playInstructionAudio();
+    };
+</script>
+</body>
+</html>
